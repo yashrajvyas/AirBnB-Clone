@@ -40,14 +40,14 @@
 * Add and manage guest details per booking
 * Maintain relationship between booking and guests
 
-### 📦 Inventory Management (🔥 Core Feature)
+### 📦 Inventory Management 
 
 * Track room availability per date
 * Maintain booked vs total rooms
 * Prevent overbooking
 * Support dynamic availability logic
 
-### 💳 Payment Integration (Basic Flow)
+### 💳 Payment Integration 
 
 * Handle booking payments
 * Track transaction IDs and payment status
