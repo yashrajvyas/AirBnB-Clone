@@ -2,7 +2,7 @@
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-Framework-brightgreen)
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-green)
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
 ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange)
 ![Maven](https://img.shields.io/badge/Maven-Build-red)
 ![Postman](https://img.shields.io/badge/Postman-API%20Testing-orange)
@@ -115,7 +115,7 @@
 * ☕ Java
 * 🌱 Spring Boot
 * 🔗 Spring Data JPA
-* 🗄️ MySQL
+* 🗄️ PostgreSQL
 * 📦 Hibernate
 * 🔐 Spring Security (Planned)
 * 🔑 JWT Authentication (Planned)
