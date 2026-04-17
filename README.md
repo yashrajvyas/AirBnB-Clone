@@ -1,4 +1,4 @@
-# 🏨 Airbnb Clone Backend
+#  Airbnb Clone Backend
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-Framework-brightgreen)
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-green)
@@ -15,57 +15,57 @@
 
 ---
 
-## 🔥 Key Features
+##  Key Features
 
-### 🏨 Hotel Management
+###  Hotel Management
 
 * Create, update, and manage hotels
 * Manage hotel amenities, photos, and contact details
 * Active/inactive hotel status
 
-### 🛏️ Room Management
+###  Room Management
 
 * Add different room types with capacity & pricing
 * Manage room availability and amenities
 * Track total room count
 
-### 📅 Booking System
+###  Booking System
 
 * Create bookings with check-in & check-out dates
 * Support multiple guests per booking
 * Booking status management (CONFIRMED, FAILED, etc.)
 
-### 👥 Guest Management
+###  Guest Management
 
 * Add and manage guest details per booking
 * Maintain relationship between booking and guests
 
-### 📦 Inventory Management 
+###  Inventory Management 
 
 * Track room availability per date
 * Maintain booked vs total rooms
 * Prevent overbooking
 * Support dynamic availability logic
 
-### 💳 Payment Integration 
+###  Payment Integration 
 
 * Handle booking payments
 * Track transaction IDs and payment status
 
-### 🔍 Search Functionality (In Progress)
+###  Search Functionality (In Progress)
 
 * Search hotels by city, date, and availability
 * Filter rooms based on occupancy and availability
 * Pagination & sorting (planned)
 
-### 💰 Dynamic Pricing Strategy (Planned)
+###  Dynamic Pricing Strategy (Planned)
 
 * Adjust pricing based on demand and availability
 * Surge pricing support
 
 ---
 
-## 🧠 System Design Highlights
+##  System Design Highlights
 
 * Scalable backend architecture inspired by real-world booking systems
 * Inventory-based availability tracking (similar to Airbnb/Booking.com)
@@ -74,7 +74,7 @@
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 * MVC Architecture
 * Layered Design:
@@ -87,7 +87,7 @@
 
 ---
 
-## 🗄️ Database Design
+##  Database Design
 
 ### Core Entities:
 
@@ -110,45 +110,21 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-* ☕ Java
-* 🌱 Spring Boot
-* 🔗 Spring Data JPA
-* 🗄️ PostgreSQL
-* 📦 Hibernate
-* 🔐 Spring Security (Planned)
-* 🔑 JWT Authentication (Planned)
-* 📬 Postman (API Testing)
-* 🧰 Maven
-
----
-
-## 📡 Sample API Endpoints
-
-| Method | Endpoint       | Description                 |
-| ------ | -------------- | --------------------------- |
-| POST   | /hotels        | Create hotel                |
-| GET    | /hotels        | Get all hotels              |
-| POST   | /rooms         | Add room                    |
-| POST   | /bookings      | Create booking              |
-| GET    | /bookings/{id} | Get booking details         |
-| GET    | /hotels/search | Search hotels (In Progress) |
+*  Java
+*  Spring Boot
+*  Spring Data JPA
+*  PostgreSQL
+*  Hibernate
+*  Spring Security 
+*  JWT Authentication 
+*  Postman-API Testing
+*  Maven
 
 ---
 
-## 🚧 Project Status
-
-🔨 In Progress
-
-* ✅ Core APIs (Hotel, Booking, Inventory)
-* 🔄 Search Functionality
-* 🔄 JWT Authentication & Security
-* 🔄 Deployment
-
----
-
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 * JWT-based Authentication & Authorization
 * Role-based access control (Admin/User)
@@ -159,7 +135,7 @@
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Yashraj Vyas**
 📧 [yvyas398845@gmail.com](mailto:yvyas398845@gmail.com)
