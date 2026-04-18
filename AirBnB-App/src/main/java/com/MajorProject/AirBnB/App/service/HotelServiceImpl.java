@@ -21,11 +21,12 @@ import java.util.stream.Collectors;
 @Slf4j
 @RequiredArgsConstructor
 public class HotelServiceImpl implements HotelService{
-    private final HotelRepository hotelRepository;
 
+    private final HotelRepository hotelRepository;
     private final InventoryService inventoryService;
     private final ModelMapper modelMapper;
     private final RoomRepository roomRepository;
+
     @Override
     public HotelDto createNewHotel(HotelDto hotelDto) {
         log.info("Creating a new hotel with name: {}", hotelDto.getName());
