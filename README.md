@@ -1,148 +1,253 @@
-#  Airbnb Clone Backend
-![Java](https://img.shields.io/badge/Java-17-blue)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-Framework-brightgreen)
-![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-green)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange)
-![Maven](https://img.shields.io/badge/Maven-Build-red)
-![Postman](https://img.shields.io/badge/Postman-API%20Testing-orange)
-![JWT](https://img.shields.io/badge/JWT-Auth-yellow)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-Security-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-![License](https://img.shields.io/badge/License-Free-lightgrey)
+# 🏨 Airbnb Clone Backend
 
-🚀 A scalable backend system for a hotel booking platform inspired by Airbnb, built using **Spring Boot** with a focus on **clean architecture, inventory management, and real-world system design**.
+<p align="center">
 
----
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge\&logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-Framework-6DB33F?style=for-the-badge\&logo=springboot)
+![Spring Security](https://img.shields.io/badge/Spring_Security-Enabled-6DB33F?style=for-the-badge\&logo=springsecurity)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C?style=for-the-badge\&logo=hibernate)
+![JPA](https://img.shields.io/badge/Spring_Data_JPA-DataLayer-blue?style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge\&logo=postgresql)
+![JWT](https://img.shields.io/badge/JWT-In_Progress-black?style=for-the-badge\&logo=jsonwebtokens)
+![Maven](https://img.shields.io/badge/Maven-Build-C71A36?style=for-the-badge\&logo=apachemaven)
+![Postman](https://img.shields.io/badge/Postman-API_Testing-FF6C37?style=for-the-badge\&logo=postman)
+![Scheduler](https://img.shields.io/badge/Scheduler-Hourly-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-##  Key Features
-
-###  Hotel Management
-
-* Create, update, and manage hotels
-* Manage hotel amenities, photos, and contact details
-* Active/inactive hotel status
-
-###  Room Management
-
-* Add different room types with capacity & pricing
-* Manage room availability and amenities
-* Track total room count
-
-###  Booking System
-
-* Create bookings with check-in & check-out dates
-* Support multiple guests per booking
-* Booking status management (CONFIRMED, FAILED, etc.)
-
-###  Guest Management
-
-* Add and manage guest details per booking
-* Maintain relationship between booking and guests
-
-###  Inventory Management 
-
-* Track room availability per date
-* Maintain booked vs total rooms
-* Prevent overbooking
-* Support dynamic availability logic
-
-###  Payment Integration 
-
-* Handle booking payments
-* Track transaction IDs and payment status
-
-###  Search Functionality (In Progress)
-
-* Search hotels by city, date, and availability
-* Filter rooms based on occupancy and availability
-* Pagination & sorting (planned)
-
-###  Dynamic Pricing Strategy (Planned)
-
-* Adjust pricing based on demand and availability
-* Surge pricing support
+</p>
 
 ---
 
-##  System Design Highlights
+## 🚀 Project Overview
 
-* Scalable backend architecture inspired by real-world booking systems
-* Inventory-based availability tracking (similar to Airbnb/Booking.com)
-* Separation of concerns using layered architecture
-* Designed to handle concurrent bookings and availability checks
+A scalable backend system for a hotel booking platform inspired by **Airbnb / Booking.com**, built using **Java Spring Boot** with focus on:
 
----
-
-##  Architecture
-
-* MVC Architecture
-* Layered Design:
-
-  * Controller Layer
-  * Service Layer
-  * Repository Layer
-* DTO-based communication
-* Exception Handling (custom exceptions)
+* Real-world backend architecture
+* Inventory-based availability system
+* Dynamic hotel pricing
+* Booking workflows
+* Scheduler automation
+* Modular clean code structure
 
 ---
 
-##  Database Design
+## ✨ Core Features
 
-### Core Entities:
+## 🔍 Hotel Search Engine
 
-* **User**
-* **Hotel**
-* **Room**
-* **Booking**
-* **Guest**
-* **BookingGuest**
-* **Inventory**
-* **Payment**
-* **ContactInfo**
+Search hotels using:
 
-### Relationships:
+* City
+* Check-in / Check-out dates
+* Rooms required
+* Pagination support
 
-* One-to-Many (Hotel → Rooms)
-* One-to-Many (User → Bookings)
-* Many-to-Many (Booking ↔ Guests via BookingGuest)
-* Inventory tracking per room per date
+```http
+GET /api/v1/hotels/search
+```
 
 ---
 
-##  Tech Stack
+## 🏨 Hotel Management
 
-*  Java
-*  Spring Boot
-*  Spring Data JPA
-*  PostgreSQL
-*  Hibernate
-*  Spring Security 
-*  JWT Authentication 
-*  Postman-API Testing
-*  Maven
+* Create hotels
+* Update hotels
+* Activate / deactivate hotels
+* Amenities support
+* Photos support
+* Contact details
 
----
-
-##  Future Enhancements
-
-* JWT-based Authentication & Authorization
-* Role-based access control (Admin/User)
-* Payment Gateway Integration (Razorpay/Stripe)
-* Caching using Redis
-* API rate limiting
-* Microservices architecture (future scope)
+```http
+POST   /api/v1/admin/hotels
+PUT    /api/v1/admin/hotels/{id}
+PATCH  /api/v1/admin/hotels/{id}/activate
+DELETE /api/v1/admin/hotels/{id}
+GET    /api/v1/admin/hotels
+```
 
 ---
 
-##  Author
+## 🛏️ Room Management
+
+* Add room types
+* Room capacity support
+* Base pricing
+* Amenities
+* Room inventory initialization
+
+```http
+POST /api/v1/admin/hotels/{hotelId}/rooms
+GET  /api/v1/hotels/{hotelId}/rooms
+```
+
+---
+
+## 📅 Booking Flow
+
+Supports:
+
+✅ Init Booking
+✅ Add Guests
+✅ Payment Handling
+✅ Confirm Booking
+
+```http
+POST /api/v1/bookings/init
+POST /api/v1/bookings/{bookingId}/guests
+GET  /api/v1/bookings/search
+```
+
+---
+
+## 📦 Inventory Management
+
+Tracks availability **per room per date**
+
+* Total rooms
+* Booked rooms
+* Reserved rooms
+* Availability status
+
+### Benefits:
+
+✅ Prevent overbooking
+✅ Fast search queries
+✅ Real-world scalable model
+
+---
+
+## 💰 Dynamic Pricing Engine
+
+Implemented using **Strategy Pattern**
+
+Pricing factors:
+
+* Occupancy
+* Urgency
+* Holiday
+* Weekend
+* Demand
+* Surge Pricing
+
+### Example:
+
+High demand + Weekend + Low inventory = Higher price
+
+---
+
+## ⏰ Scheduler Automation
+
+Runs hourly using Spring Scheduler.
+
+Performs:
+
+* Dynamic price recalculation
+* Hotel minimum price updates
+* Inventory refresh
+
+---
+
+## 🧠 Design Highlights
+
+* Layered Architecture
+* DTO Pattern
+* Strategy Pattern
+* REST APIs
+* Scheduler Jobs
+* Exception Handling
+* Scalable code structure
+
+---
+
+## 🏗️ Project Structure
+
+```text
+controller/
+service/
+repository/
+entity/
+dto/
+strategy/
+config/
+exception/
+security/
+```
+
+---
+
+## 🗄️ Database Tables
+
+* users
+* hotel
+* room
+* booking
+* guest
+* booking_guests
+* inventory
+* payment
+* hotel_min_price
+* user_roles
+
+---
+
+## 🔐 Authentication
+
+Currently in progress:
+
+* JWT Login / Signup
+* Role Based Access
+* Protected APIs
+
+---
+
+## 🛠️ Tech Stack
+
+* Java 17
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* Hibernate
+* PostgreSQL
+* Maven
+* Postman
+
+---
+
+## ▶️ Run Locally
+
+```bash
+git clone https://github.com/yashrajvyas/AirBnB-Clone.git
+cd AirBnB-Clone
+mvn spring-boot:run
+```
+
+---
+
+## 🚀 Future Enhancements
+
+* Complete JWT Auth
+* Payment Gateway Integration
+* Redis Caching
+* Email Notifications
+* Docker Deployment
+* AWS Deployment
+* Frontend Integration
+
+---
+
+## 👨‍💻 Author
 
 **Yashraj Vyas**
+
 📧 [yvyas398845@gmail.com](mailto:yvyas398845@gmail.com)
 🔗 https://www.linkedin.com/in/yashraj-vyas-819b46320
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Support
 
-If you like this project, give it a ⭐ on GitHub!
+If you like this project, give it a **Star ⭐**
+
+---
+
