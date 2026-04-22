@@ -19,7 +19,7 @@
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 A scalable backend system for a hotel booking platform inspired by **Airbnb / Booking.com**, built using **Java Spring Boot** with focus on:
 
@@ -32,7 +32,7 @@ A scalable backend system for a hotel booking platform inspired by **Airbnb / Bo
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
 ## 🔍 Hotel Search Engine
 
