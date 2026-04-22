@@ -1,4 +1,4 @@
-# 🏨 Airbnb Clone Backend
+# Airbnb Clone Backend
 
 <p align="center">
 
@@ -34,7 +34,7 @@ A scalable backend system for a hotel booking platform inspired by **Airbnb / Bo
 
 ##  Core Features
 
-## 🔍 Hotel Search Engine
+##  Hotel Search Engine
 
 Search hotels using:
 
@@ -49,7 +49,7 @@ GET /api/v1/hotels/search
 
 ---
 
-## 🏨 Hotel Management
+##  Hotel Management
 
 * Create hotels
 * Update hotels
@@ -68,7 +68,7 @@ GET    /api/v1/admin/hotels
 
 ---
 
-## 🛏️ Room Management
+##  Room Management
 
 * Add room types
 * Room capacity support
@@ -83,7 +83,7 @@ GET  /api/v1/hotels/{hotelId}/rooms
 
 ---
 
-## 📅 Booking Flow
+##  Booking Flow
 
 Supports:
 
@@ -100,7 +100,7 @@ GET  /api/v1/bookings/search
 
 ---
 
-## 📦 Inventory Management
+##  Inventory Management
 
 Tracks availability **per room per date**
 
@@ -117,7 +117,7 @@ Tracks availability **per room per date**
 
 ---
 
-## 💰 Dynamic Pricing Engine
+##  Dynamic Pricing Engine
 
 Implemented using **Strategy Pattern**
 
@@ -136,7 +136,7 @@ High demand + Weekend + Low inventory = Higher price
 
 ---
 
-## ⏰ Scheduler Automation
+##  Scheduler Automation
 
 Runs hourly using Spring Scheduler.
 
@@ -148,7 +148,7 @@ Performs:
 
 ---
 
-## 🧠 Design Highlights
+##  Design Highlights
 
 * Layered Architecture
 * DTO Pattern
@@ -160,7 +160,7 @@ Performs:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```text
 controller/
@@ -176,7 +176,7 @@ security/
 
 ---
 
-## 🗄️ Database Tables
+##  Database Tables
 
 * users
 * hotel
@@ -191,7 +191,7 @@ security/
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 Currently in progress:
 
@@ -201,7 +201,7 @@ Currently in progress:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Java 17
 * Spring Boot
