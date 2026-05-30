@@ -3,7 +3,6 @@ package com.MajorProject.AirBnB.App.service;
 import com.MajorProject.AirBnB.App.dto.BookingDto;
 import com.MajorProject.AirBnB.App.dto.BookingRequest;
 import com.MajorProject.AirBnB.App.dto.GuestDto;
-import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
