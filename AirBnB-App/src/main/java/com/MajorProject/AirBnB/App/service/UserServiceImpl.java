@@ -25,3 +25,4 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         return userRepository.findByEmail(username).orElse(null);
     }
 }
+
