@@ -1,4 +1,4 @@
-# 🏨 Airbnb Clone Backend
+#  Airbnb Clone Backend
 
 <p>
   A production-inspired hotel booking backend built with Spring Boot, designed around clean architecture, secure APIs, inventory-based availability, and a complete booking workflow.
@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a scalable backend system for an Airbnb-like hotel booking platform. It provides REST APIs for hotel management, room inventory, bookings, guest handling, payments, authentication, and role-based authorization.
 
@@ -22,36 +22,36 @@ The application follows a layered MVC architecture and uses inventory records pe
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication & Authorization
+###  Authentication & Authorization
 
 * JWT-based authentication
 * Secure password handling with Spring Security
 * Role-based access control
 * Protected APIs for hotel managers and users
 
-### 🏨 Hotel Management
+###  Hotel Management
 
 * Create, update, and manage hotels
 * Store hotel amenities, photos, contact information, and location details
 * Activate or deactivate hotels
 * Hotel ownership and manager-level access control
 
-### 🛏️ Room Management
+###  Room Management
 
 * Add and manage multiple room types for a hotel
 * Configure room capacity, amenities, pricing, and photos
 * Maintain total room count and room-specific details
 
-### 📅 Inventory & Availability Management
+###  Inventory & Availability Management
 
 * Date-wise inventory tracking for each room
 * Track total rooms, booked rooms, and available rooms
 * Availability validation during booking
 * Designed to prevent overbooking
 
-### 🧾 Booking Management
+###  Booking Management
 
 * Create booking sessions
 * Add guest details to a booking
@@ -59,20 +59,20 @@ The application follows a layered MVC architecture and uses inventory records pe
 * Booking status management
 * Support for multiple guests in a single booking
 
-### 💳 Payment Integration
+### Payment Integration
 
 * Stripe payment gateway integration
 * Payment session creation
 * Webhook handling for payment updates
 * Track payment status and transaction details
 
-### 🔎 Search & Filtering
+###  Search & Filtering
 
 * Search hotels by city, dates, guest capacity, and availability
 * Filter rooms based on booking requirements
 * Pagination and sorting support
 
-### ⚙️ API Architecture
+###  API Architecture
 
 * DTO-based request and response handling
 * Global exception handling
@@ -82,7 +82,7 @@ The application follows a layered MVC architecture and uses inventory records pe
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 
 ```text
 Client / Postman
@@ -111,7 +111,7 @@ The project follows a layered architecture:
 
 ---
 
-## 🗂️ Core Entities
+##  Core Entities
 
 | Entity       | Description                                             |
 | ------------ | ------------------------------------------------------- |
@@ -127,7 +127,7 @@ The project follows a layered architecture:
 
 ---
 
-## 🔗 Entity Relationships
+##  Entity Relationships
 
 ```text
 User ────< Hotel
@@ -142,7 +142,7 @@ Booking ────< Payment
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Java
 * Spring Boot
@@ -161,7 +161,7 @@ Booking ────< Payment
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -223,7 +223,7 @@ http://localhost:8080
 
 ---
 
-## 📖 API Documentation
+##  API Documentation
 
 Swagger UI is available after running the application:
 
@@ -233,7 +233,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## 🔐 Sample Authorization Header
+##  Sample Authorization Header
 
 For protected endpoints, send the JWT token in the request header:
 
@@ -243,7 +243,7 @@ Authorization: Bearer <your_jwt_token>
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Redis caching for faster hotel search
 * Rate limiting for public APIs
@@ -255,7 +255,7 @@ Authorization: Bearer <your_jwt_token>
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Yashraj Vyas**
 
@@ -264,6 +264,6 @@ Authorization: Bearer <your_jwt_token>
 
 ---
 
-## ⭐ Support
+##  Support
 
 If you found this project useful, consider giving it a star on GitHub.
